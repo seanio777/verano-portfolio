@@ -3,40 +3,40 @@ import { FiBook, FiCalendar, FiMapPin } from 'react-icons/fi'
 const education = [
   {
     level: 'Tertiary',
-    school: 'Your University Name',        // ← REPLACE
+    school: 'Technological Institute of the Philippines-Manila',        // ← REPLACE
     course: 'BS Computer Engineering',
-    year: '2022 – Present',
-    location: 'City, Province',             // ← REPLACE
+    year: '2024 - Present',
+    location: 'Casal St., Quiapo, Manila',             // ← REPLACE
     status: 'Currently Enrolled',
-    units: '3rd Year',
+    units: '2nd Year',
     color: 'var(--cyan-accent)',
   },
   {
     level: 'Senior High School',
-    school: 'Your Senior High School Name', // ← REPLACE
+    school: 'Parañaque National High School-Main', // ← REPLACE
     course: 'STEM Strand',
-    year: '2020 – 2022',
-    location: 'City, Province',             // ← REPLACE
+    year: '2022 - 2024',
+    location: 'San Dionisio, Paranaque',             // ← REPLACE
     status: 'Graduated',
-    units: 'With Honors',
+    units: 'With High Honors',
     color: 'var(--blue-bright)',
   },
   {
     level: 'Junior High School',
-    school: 'Your Junior High School Name', // ← REPLACE
-    course: 'General Academic',
-    year: '2016 – 2020',
-    location: 'City, Province',             // ← REPLACE
+    school: 'Parañaque National High School-STE Program', // ← REPLACE
+    course: 'Science, Technology, and Engineering',
+    year: '2017 - 2022',
+    location: 'San Dionisio, Parañaque',             // ← REPLACE
     status: 'Graduated',
     units: '',
     color: 'var(--blue-light)',
   },
   {
     level: 'Elementary',
-    school: 'Your Elementary School Name',  // ← REPLACE
+    school: 'San Isidro Elementary School',  // ← REPLACE
     course: 'Primary Education',
-    year: '2010 – 2016',
-    location: 'City, Province',             // ← REPLACE
+    year: '2015 - 2017',
+    location: 'San Isidro, Parañaque',             // ← REPLACE
     status: 'Graduated',
     units: '',
     color: 'var(--blue-ice)',
