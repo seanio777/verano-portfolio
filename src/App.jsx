@@ -6,6 +6,7 @@ import Objective from './components/Objective'
 import Academic from './components/Academic'
 import Seminars from './components/Seminars'
 import Achievements from './components/Achievements'
+import Projects from './components/Projects'
 import Certificates from './components/Certificates'
 import Contact from './components/Contact'
 import References from './components/References'
@@ -41,6 +42,8 @@ function App() {
         <Seminars />
         <div className="divider" />
         <Achievements />
+        <div className="divider" />
+        <Projects />
         <div className="divider" />
         <Certificates />
         <div className="divider" />
