@@ -9,11 +9,11 @@ const contactInfo = [
 ]
 
 const socials = [
-  { icon: <FaGithub size={22} />, label: 'GitHub', href: 'https://github.com/yourusername', color: '#e5e7eb' },
-  { icon: <FaLinkedin size={22} />, label: 'LinkedIn', href: 'https://linkedin.com/in/yourusername', color: '#0a66c2' },
-  { icon: <FaFacebook size={22} />, label: 'Facebook', href: 'https://facebook.com/yourusername', color: '#1877f2' },
-  { icon: <FaInstagram size={22} />, label: 'Instagram', href: 'https://instagram.com/yourusername', color: '#e1306c' },
-  { icon: <FaTwitter size={22} />, label: 'Twitter/X', href: 'https://twitter.com/yourusername', color: '#1da1f2' },
+  { icon: <FaGithub size={22} />, label: 'GitHub', href: 'https://github.com/seanio777', color: '#e5e7eb' },
+  { icon: <FaLinkedin size={22} />, label: 'LinkedIn', href: 'https://www.linkedin.com/in/ja-verano/', color: '#0a66c2' },
+  { icon: <FaFacebook size={22} />, label: 'Facebook', href: 'https://web.facebook.com/j.v.970', color: '#1877f2' },
+  { icon: <FaInstagram size={22} />, label: 'Instagram', href: 'https://www.instagram.com/_jcv6?igsh=MXdsNmsxYzkya3VpOA==', color: '#e1306c' },
+  { icon: <FaTwitter size={22} />, label: 'Twitter/X', href: 'https://x.com/jaeprvt_', color: '#1da1f2' },
 ]
 
 export default function Contact() {

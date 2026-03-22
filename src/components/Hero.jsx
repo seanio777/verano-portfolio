@@ -118,8 +118,8 @@ export default function Hero() {
             marginBottom: 40,
           }}>
             {/* ← REPLACE THIS with your actual biography */}
-            He is a passionate and driven Computer Engineering student at [Your University].
-            Born on [Your Birthdate], he has always been fascinated by the intersection of
+            He is a passionate and driven Computer Engineering student at the Technological Institue of the Philippines-Manila.
+            Born on November 5, 2006, he has always been fascinated by the intersection of
             hardware and software. He enrolled in BS Computer Engineering to pursue his dream
             of building intelligent systems that solve real-world problems.
           </p>
@@ -144,9 +144,9 @@ export default function Hero() {
             }}>FOLLOW</span>
             <div style={{ width: 30, height: 1, background: 'var(--blue-border)' }} />
             {[
-              { icon: <FaGithub size={18} />, href: 'https://github.com/yourusername', label: 'GitHub' },
-              { icon: <FaLinkedin size={18} />, href: 'https://linkedin.com/in/yourusername', label: 'LinkedIn' },
-              { icon: <FaFacebook size={18} />, href: 'https://facebook.com/yourusername', label: 'Facebook' },
+              { icon: <FaGithub size={18} />, href: 'https://github.com/seanio777', label: 'GitHub' },
+              { icon: <FaLinkedin size={18} />, href: 'https://www.linkedin.com/in/ja-verano/', label: 'LinkedIn' },
+              { icon: <FaFacebook size={18} />, href: 'https://web.facebook.com/j.v.970', label: 'Facebook' },
             ].map(s => (
               <a key={s.label} href={s.href} target="_blank" rel="noreferrer" style={{
                 color: 'var(--white-dim)',
