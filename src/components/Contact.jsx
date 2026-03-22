@@ -3,9 +3,9 @@ import { FaGithub, FaLinkedin, FaFacebook, FaInstagram, FaTwitter } from 'react-
 
 // ← REPLACE ALL values with your actual contact info
 const contactInfo = [
-  { icon: <FiMail size={18} />, label: 'Email', value: 'yourname@email.com', href: 'mailto:yourname@email.com' },
-  { icon: <FiPhone size={18} />, label: 'Phone', value: '+63 9XX XXX XXXX', href: 'tel:+639XXXXXXXXX' },
-  { icon: <FiMapPin size={18} />, label: 'Location', value: 'City, Province, Philippines', href: '#' },
+  { icon: <FiMail size={18} />, label: 'Email', value: 'ajverano01@gmail.com', href: 'mailto:ajverano01@gmail.com' },
+  { icon: <FiPhone size={18} />, label: 'Phone', value: '+63 994 6391 1670', href: 'tel:+639946391670' },
+  { icon: <FiMapPin size={18} />, label: 'Location', value: 'Parañaque City, Metro Manila, Philippines', href: '#' },
 ]
 
 const socials = [
