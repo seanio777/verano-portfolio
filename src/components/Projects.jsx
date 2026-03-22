@@ -234,7 +234,7 @@ export default function Projects() {
           }}>
             More projects are being developed and will be added soon.{' '}
             <a
-              href="https://github.com/YourUsername"   // ← REPLACE
+              href="https://github.com/seanio777"   // ← REPLACE
               target="_blank"
               rel="noreferrer"
               style={{
