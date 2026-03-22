@@ -86,13 +86,13 @@ export default function Hero() {
             marginBottom: 8,
             letterSpacing: '-0.02em',
           }}>
-            <span style={{ color: 'var(--white)' }}>YOUR</span>
+            <span style={{ color: 'var(--white)' }}>JOSE ANTONIO</span>
             <br />
             <span style={{
               background: 'linear-gradient(135deg, var(--blue-bright), var(--cyan-accent))',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
-            }}>FULL NAME</span>
+            }}>VERANO</span>
           </h1>
 
           {/* Title */}
