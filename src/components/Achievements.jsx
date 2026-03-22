@@ -1,35 +1,35 @@
-import { FiAward, FiStar } from 'react-icons/fi'
-import { FaTrophy, FaMedal } from 'react-icons/fa'
+import { FiAward } from 'react-icons/fi'
+import { FaTrophy, FaMedal, FaStar, FaNewspaper } from 'react-icons/fa'
 
 // ← REPLACE with your actual achievements
 const achievements = [
   {
-    title: "Dean's List",
-    subtitle: '1st & 2nd Semester AY 2023-2024',
-    description: 'Recognized for outstanding academic performance with a GWA of 1.XX, qualifying for the Dean\'s List.',
+    title: "Dean's Lister",
+    subtitle: '1st Semester AY 2024-2025',
+    description: 'Recognized for outstanding academic performance with a GWA of 1.55, qualifying for the Dean\'s List.',
     icon: <FaTrophy size={20} />,
     color: '#fbbf24',
   },
   {
-    title: 'Best Capstone Project',
-    subtitle: 'Department of CpE – 2024',
-    description: 'Awarded Best Project in the Computer Engineering Department for the development of an IoT-based monitoring system.',
-    icon: <FiAward size={20} />,
-    color: 'var(--cyan-accent)',
-  },
-  {
-    title: 'Programming Contest Finalist',
-    subtitle: 'Regional ICT Competition 2023',
-    description: 'Reached the finals of the regional programming competition, placing in the top 5 among university-level participants.',
+    title: '2nd Runner Up - Inhinyera\'s Shirt Design Competition',
+    subtitle: 'Inhinyera - TIP Manila',
+    description: 'Awarded 2nd runner up in the Shirt Design Competition held during the celebration of Women\'s Month and Inhinyera\'s 10th Founding Anniversary.',
     icon: <FaMedal size={20} />,
-    color: '#a78bfa',
+    color: '#cd7f32',
   },
   {
-    title: 'Academic Excellence Award',
-    subtitle: 'Senior High School Graduation 2022',
-    description: 'Graduated with academic excellence from the STEM strand, recognized as one of the top students in the batch.',
-    icon: <FiStar size={20} />,
-    color: 'var(--blue-bright)',
+    title: 'With High Honors',
+    subtitle: 'Senior High School Graduation | PNHS-Main',
+    description: 'Graduated Senior High School With High Honors, demonstrated outstanding academic performance and consistent excellence throughout the entire program.',
+    icon: <FaStar size={20} />,
+    color: '#fbbf24',
+  },
+  {
+    title: '5th Place - Division Schools Press Conference',
+    subtitle: 'Pagwawasto at Pag-uulo ng Balita | Elementary',
+    description: 'Placed 5th in the Division Schools Press Conference during elementary, competing in the Filipino journalism category of Pagwawasto at Pag-uulo ng Balita (News Editing and Headline Writing), demonstrating strong language proficiency and journalistic skills at the division level.',
+    icon: <FaNewspaper size={20} />,
+    color: '#60a5fa',
   },
 ]
 
