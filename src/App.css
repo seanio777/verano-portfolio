@@ -287,3 +287,208 @@ section {
 .animate-fade-left {
   animation: fadeInLeft 0.8s ease forwards;
 }
+
+/* ============================================================
+   RESPONSIVE STYLES — paste at the bottom of App.css
+   ============================================================ */
+
+/* ── Small Laptops / Large Tablets (≤1024px) ── */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 28px;
+  }
+
+  section {
+    padding: 80px 0;
+  }
+
+  /* Hero: shrink photo */
+  #hero .container {
+    gap: 48px;
+  }
+
+  #hero .container > div:last-child > div[style] {
+    width: 260px !important;
+    height: 320px !important;
+  }
+
+  /* Objective two-col → tighter */
+  #objective .container > div {
+    gap: 48px;
+  }
+
+  /* Contact two-col → tighter */
+  #contact .container > div[style*="grid"] {
+    gap: 40px;
+  }
+}
+
+/* ── Tablets (≤768px) ── */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  section {
+    padding: 64px 0;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+
+  /* ── Navbar ── */
+  nav .desktop-nav {
+    display: none !important;
+  }
+
+  nav .mobile-menu-btn {
+    display: block !important;
+  }
+
+  /* ── Hero: stack vertically ── */
+  #hero .container {
+    flex-direction: column-reverse !important;
+    align-items: center !important;
+    gap: 40px !important;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  #hero .container > div:first-child {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #hero .container > div:first-child > div[style*="flex"] {
+    justify-content: center;
+  }
+
+  #hero .container > div:last-child {
+    flex-shrink: unset !important;
+  }
+
+  /* Photo size on tablet */
+  #hero .container > div:last-child > div[style*="width: 320"] {
+    width: 220px !important;
+    height: 270px !important;
+  }
+
+  /* Hide floating stats badge on small screens */
+  #hero .container > div:last-child > div:last-child {
+    display: none !important;
+  }
+
+  /* ── Objective: stack vertically ── */
+  #objective .container > div {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+
+  /* ── Achievements: single column ── */
+  #achievements .container > div[style*="grid-template-columns: repeat(2"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* ── Contact: stack vertically ── */
+  #contact .container > div[style*="grid-template-columns: 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+
+  /* ── References: responsive grid ── */
+  #references .container > div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* ── Seminars & Certificates: single col ── */
+  #seminars .container > div[style*="grid"],
+  #certificates .container > div[style*="grid"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* ── Footer ── */
+  footer .container {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 8px !important;
+  }
+}
+
+/* ── Mobile Phones (≤480px) ── */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  section {
+    padding: 52px 0;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 32px;
+  }
+
+  /* Hero name font shrink */
+  #hero h1 {
+    font-size: 2.4rem !important;
+  }
+
+  /* Hero buttons stack */
+  #hero .container > div:first-child > div[style*="display: flex"][style*="gap: 16"] {
+    flex-direction: column !important;
+    width: 100%;
+  }
+
+  #hero .container > div:first-child > div[style*="display: flex"][style*="gap: 16"] a {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Card padding reduce */
+  .card {
+    padding: 20px 18px !important;
+  }
+
+  /* Achievements: hide watermark numbers */
+  #achievements .card > div[style*="position: absolute"] {
+    display: none !important;
+  }
+
+  /* Academic timeline indent reduce */
+  #academic .container > div[style*="padding-left"] {
+    padding-left: 20px !important;
+  }
+
+  #academic .container div[style*="left: -39"] {
+    left: -27px !important;
+  }
+
+  /* Contact social icons wrap */
+  #contact div[style*="display: flex"][style*="gap: 14"] {
+    gap: 10px !important;
+  }
+
+  /* Seminar / cert tags overflow */
+  .tag {
+    font-size: 0.65rem !important;
+    padding: 3px 8px !important;
+  }
+}
+
+/* ── Extra small (≤360px) ── */
+@media (max-width: 360px) {
+  #hero h1 {
+    font-size: 2rem !important;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    padding: 12px 20px;
+    font-size: 0.85rem;
+  }
+}
