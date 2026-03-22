@@ -28,7 +28,7 @@ const education = [
     year: '2017 - 2022',
     location: 'San Dionisio, Parañaque',             // ← REPLACE
     status: 'Graduated',
-    units: '',
+    units: 'With High Honors',
     color: 'var(--blue-light)',
   },
   {
@@ -38,6 +38,16 @@ const education = [
     year: '2015 - 2017',
     location: 'San Isidro, Parañaque',             // ← REPLACE
     status: 'Graduated',
+    units: 'Salutatorian',
+    color: 'var(--blue-ice)',
+  },
+  {
+    level: 'Elementary',
+    school: 'Masville Elementary School',  // ← REPLACE
+    course: 'Primary Education',
+    year: '2011 - 2015',
+    location: 'San Isidro, Parañaque',             // ← REPLACE
+    status: 'Completed',
     units: '',
     color: 'var(--blue-ice)',
   },
