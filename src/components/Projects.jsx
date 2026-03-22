@@ -15,6 +15,18 @@ const projects = [
     status: 'Completed',
     year: '2024',
   },
+  {
+    title: 'Bullet Rush 3D',
+    description:
+        'A 3D first-person shooter game built with Python and the Ursina Engine. Features enemy that chases and attacks the player, a health and ammo system, score tracking, a high score board, level progression with bonus points, and pause/restart functionality.',
+    tech: ['Python', 'Ursina Engine', 'OOP', '3D Game Dev'],
+    icon: <FaGamepad size={22} />,
+    color: '#f87171',
+    github: 'https://github.com/seanio777/bullet-rush.git',  // ← update after upload
+    demo: '',
+    status: 'Completed',
+    year: '2024',
+  },
   // ── Add more projects below this line ──────────────────────
   // {
   //   title: 'Your Project Title',
