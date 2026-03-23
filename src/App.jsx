@@ -10,6 +10,7 @@ import Projects from './components/Projects'
 import Certificates from './components/Certificates'
 import Contact from './components/Contact'
 import References from './components/References'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   useEffect(() => {
@@ -51,6 +52,7 @@ function App() {
         <div className="divider" />
         <References />
       </main>
+      <ScrollToTop />
     </>
   )
 }
