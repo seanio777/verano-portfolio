@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import './App.css'
+import ThemeToggle from './components/ThemeToggle'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Objective from './components/Objective'
@@ -53,6 +54,7 @@ function App() {
         <References />
       </main>
       <ScrollToTop />
+      <ThemeToggle />
     </>
   )
 }

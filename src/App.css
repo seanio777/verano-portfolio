@@ -492,3 +492,161 @@ section {
     font-size: 0.85rem;
   }
 }
+
+/* ============================================================
+   LIGHT MODE — paste at the bottom of App.css
+   (below the responsive styles)
+   ============================================================ */
+
+[data-theme="light"] {
+  --blue-deep:   #f0f6ff;
+  --blue-dark:   #e8f0fe;
+  --blue-mid:    #dce8fd;
+  --blue-card:   #ffffff;
+  --blue-border: #bdd3f8;
+  --blue-glow:   #1e5bff;
+  --blue-bright: #2563eb;
+  --blue-light:  #1d4ed8;
+  --blue-ice:    #1e40af;
+  --cyan-accent: #0284c7;
+  --white:       #0f172a;
+  --white-muted: #334155;
+  --white-dim:   #64748b;
+}
+
+/* ── Body background ── */
+[data-theme="light"] body {
+  background-color: var(--blue-deep);
+}
+
+/* ── Navbar ── */
+[data-theme="light"] nav {
+  background: rgba(240, 246, 255, 0.92) !important;
+  border-bottom-color: rgba(189, 211, 248, 0.8) !important;
+}
+
+/* ── Cards ── */
+[data-theme="light"] .card {
+  background: #ffffff;
+  border-color: #bdd3f8;
+  box-shadow: 0 4px 20px rgba(30, 91, 255, 0.08);
+}
+
+[data-theme="light"] .card:hover {
+  box-shadow: 0 8px 30px rgba(30, 91, 255, 0.15);
+}
+
+/* ── Grid background ── */
+[data-theme="light"] .grid-bg {
+  background-image:
+    linear-gradient(rgba(30, 91, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30, 91, 255, 0.06) 1px, transparent 1px);
+}
+
+/* ── Buttons ── */
+[data-theme="light"] .btn-outline {
+  color:        var(--blue-bright);
+  border-color: #bdd3f8;
+}
+
+[data-theme="light"] .btn-outline:hover {
+  background:   rgba(37, 99, 235, 0.08);
+  border-color: var(--blue-bright);
+}
+
+/* ── Tags ── */
+[data-theme="light"] .tag {
+  background:   rgba(37, 99, 235, 0.08);
+  border-color: rgba(37, 99, 235, 0.25);
+  color:        var(--blue-bright);
+}
+
+/* ── Divider ── */
+[data-theme="light"] .divider {
+  background: linear-gradient(90deg, transparent, #bdd3f8, transparent);
+}
+
+/* ── Scrollbar ── */
+[data-theme="light"] ::-webkit-scrollbar-track {
+  background: #e8f0fe;
+}
+
+[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background: #93c5fd;
+}
+
+/* ── Inputs (Contact form) ── */
+[data-theme="light"] input,
+[data-theme="light"] textarea {
+  background: rgba(240, 246, 255, 0.9) !important;
+  color:      #0f172a !important;
+  border-color: #bdd3f8 !important;
+}
+
+[data-theme="light"] input::placeholder,
+[data-theme="light"] textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+[data-theme="light"] input:focus,
+[data-theme="light"] textarea:focus {
+  border-color: var(--blue-bright) !important;
+  background:   #ffffff !important;
+}
+
+/* ── Section label line ── */
+[data-theme="light"] .section-label::before {
+  background: var(--cyan-accent);
+}
+
+/* ── Footer ── */
+[data-theme="light"] footer {
+  border-top-color: #bdd3f8;
+}
+
+/* ── Mobile drawer ── */
+[data-theme="light"] .mobile-drawer {
+  background: rgba(240, 246, 255, 0.97) !important;
+}
+
+/* ── Hero name gradient stays vivid in light mode ── */
+[data-theme="light"] #hero h1 span:last-child {
+  background: linear-gradient(135deg, #1e5bff, #0284c7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ── Academic timeline line ── */
+[data-theme="light"] #academic .container > div > div:first-child {
+  background: linear-gradient(to bottom, #0284c7, #2563eb, transparent) !important;
+}
+
+/* ── Glow orbs — softer in light mode ── */
+[data-theme="light"] .glow-orb {
+  opacity: 0.4;
+}
+
+/* ── Status badge in projects (In Progress) ── */
+[data-theme="light"] .card p,
+[data-theme="light"] .card h3,
+[data-theme="light"] .card h4 {
+  color: inherit;
+}
+
+/* ── Smooth theme transition on everything ── */
+body,
+.card,
+nav,
+footer,
+section,
+input,
+textarea,
+.tag,
+.btn-outline,
+.divider {
+  transition:
+    background-color 0.4s ease,
+    border-color     0.4s ease,
+    color            0.4s ease,
+    box-shadow       0.4s ease !important;
+}
