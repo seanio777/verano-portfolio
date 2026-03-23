@@ -1,4 +1,4 @@
-import { FiGithub, FiExternalLink, FiCode, FiFolder, FiUsers, FiMonitor } from 'react-icons/fi'
+import { FiGithub, FiExternalLink, FiCode, FiFolder, FiUsers, FiMonitor, FiClipboard } from 'react-icons/fi'
 import { FaGamepad } from 'react-icons/fa'
 
 const projects = [
@@ -27,28 +27,40 @@ const projects = [
     year: '2025',
   },
   {
-  title: 'Guidance Counseling Appointment System',
-  description:
-    'A console-based appointment management system built in C++ for student-counselor scheduling. Features include real-time slot booking, auto-assignment, appointment transfer, conflict detection using a graph, undo functionality via a stack, and a waiting queue.',
-  tech: ['C++', 'Data Structures', 'Group Project'],
-  icon: <FiUsers size={22} />,
-  color: '#34d399',
-  github: 'https://github.com/seanio777/guidance-counseling-system.git',  // ← update after upload
-  demo: '',
-  status: 'Completed',
-  year: '2025',
+    title: 'Guidance Counseling Appointment System',
+    description:
+      'A console-based appointment management system built in C++ for student-counselor scheduling. Features include real-time slot booking, auto-assignment, appointment transfer, conflict detection using a graph, undo functionality via a stack, and a waiting queue.',
+    tech: ['C++', 'Data Structures', 'Group Project'],
+    icon: <FiUsers size={22} />,
+    color: '#34d399',
+    github: 'https://github.com/seanio777/guidance-counseling-system.git',  // ← update after upload
+    demo: '',
+    status: 'Completed',
+    year: '2025',
   },
   {
-  title: 'SkyLine Analytics — Login & Dashboard UI',
-  description:
-    'A React-based enterprise login and analytics dashboard UI featuring glassmorphism design, simulated authentication with loading states, error handling with shake animation, and a mock analytics dashboard displaying live-style stats. Built with clean component architecture and ES6 patterns.',
-  tech: ['React', 'Vite', 'JavaScript', 'CSS', 'Glassmorphism'],
-  icon: <FiMonitor size={22} />,
-  color: '#10b981',
-  github: 'https://github.com/seanio777/project-gatekeeper.git',  
-  demo: 'https://seanio777.github.io/project-gatekeeper/', 
-  status: 'Completed',
-  year: '2026',
+    title: 'SkyLine Analytics — Login & Dashboard UI',
+    description:
+      'A React-based enterprise login and analytics dashboard UI featuring glassmorphism design, simulated authentication with loading states, error handling with shake animation, and a mock analytics dashboard displaying live-style stats. Built with clean component architecture and ES6 patterns.',
+    tech: ['React', 'Vite', 'JavaScript', 'CSS', 'Glassmorphism'],
+    icon: <FiMonitor size={22} />,
+    color: '#10b981',
+    github: 'https://github.com/seanio777/project-gatekeeper.git',  
+    demo: 'https://seanio777.github.io/project-gatekeeper/', 
+    status: 'Completed',
+    year: '2026',
+  },
+  {
+    title: 'ADEi University — Student Enrollment Portal',
+    description:
+      'A fully responsive React-based student enrollment form featuring dynamic college and degree program dropdowns, real-time field validation with visual feedback, and a complete multi-section layout covering personal info, contact details, academic history, and enrollment choices.',
+    tech: ['React', 'Vite', 'JavaScript', 'CSS', 'Responsive Design'],
+    icon: <FiClipboard size={22} />,
+    color: '#0d6efd',
+    github: 'https://github.com/seanio777/enrollment-ui-design.git',  // ← update after upload
+    demo: 'https://adei-enrollment-form.netlify.app/',   // ← add your Netlify link here
+    status: 'Completed',
+    year: '2026',
   },
   // ── Add more projects below this line ──────────────────────
   // {
