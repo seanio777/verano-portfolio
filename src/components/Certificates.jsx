@@ -3,11 +3,11 @@ import { FiExternalLink, FiShield } from 'react-icons/fi'
 // ← REPLACE with your actual certificates
 const certificates = [
   {
-    title: 'Introduction to Cybersecurity',
-    issuer: 'Cisco Networking Academy',
-    date: 'October 2024',
-    credentialId: 'CISCO-XXXX-XXXX',
-    link: 'https://cisco.com',
+    title: 'Advent of Cyber 2025',
+    issuer: 'TryHackMe',
+    date: 'December 2025',
+    credentialId: 'THM-7QSJU6KYRO',
+    link: 'https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-7QSJU6KYRO.pdf',
     category: 'Security',
   },
   {
