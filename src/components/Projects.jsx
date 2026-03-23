@@ -1,7 +1,6 @@
-import { FiGithub, FiExternalLink, FiCode, FiFolder } from 'react-icons/fi'
+import { FiGithub, FiExternalLink, FiCode, FiFolder, FiUsers } from 'react-icons/fi'
 import { FaGamepad } from 'react-icons/fa'
 
-// ← REPLACE with your actual projects
 const projects = [
   {
     title: 'Mr. Bunny: A Text-Based Horror Game',
@@ -13,7 +12,7 @@ const projects = [
     github: 'https://github.com/seanio777/mr-bunny-game.git',  // ← REPLACE
     demo: '',
     status: 'Completed',
-    year: '2024',
+    year: '2025',
   },
   {
     title: 'Bullet Rush 3D',
@@ -25,7 +24,19 @@ const projects = [
     github: 'https://github.com/seanio777/bullet-rush.git',  // ← update after upload
     demo: '',
     status: 'Completed',
-    year: '2024',
+    year: '2025',
+  },
+  {
+  title: 'Guidance Counseling Appointment System',
+  description:
+    'A console-based appointment management system built in C++ for student-counselor scheduling. Features include real-time slot booking, auto-assignment, appointment transfer, conflict detection using a graph, undo functionality via a stack, and a waiting queue.',
+  tech: ['C++', 'Data Structures', 'Group Project'],
+  icon: <FiUsers size={22} />,
+  color: '#34d399',
+  github: 'https://github.com/seanio777/guidance-counseling-system.git',  // ← update after upload
+  demo: '',
+  status: 'Completed',
+  year: '2025',
   },
   // ── Add more projects below this line ──────────────────────
   // {
