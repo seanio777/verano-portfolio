@@ -1,4 +1,4 @@
-import { FiGithub, FiExternalLink, FiCode, FiFolder, FiUsers } from 'react-icons/fi'
+import { FiGithub, FiExternalLink, FiCode, FiFolder, FiUsers, FiMonitor } from 'react-icons/fi'
 import { FaGamepad } from 'react-icons/fa'
 
 const projects = [
@@ -37,6 +37,18 @@ const projects = [
   demo: '',
   status: 'Completed',
   year: '2025',
+  },
+  {
+  title: 'SkyLine Analytics — Login & Dashboard UI',
+  description:
+    'A React-based enterprise login and analytics dashboard UI featuring glassmorphism design, simulated authentication with loading states, error handling with shake animation, and a mock analytics dashboard displaying live-style stats. Built with clean component architecture and ES6 patterns.',
+  tech: ['React', 'Vite', 'JavaScript', 'CSS', 'Glassmorphism'],
+  icon: <FiMonitor size={22} />,
+  color: '#10b981',
+  github: 'https://github.com/seanio777/project-gatekeeper.git',  
+  demo: 'https://seanio777.github.io/project-gatekeeper/', 
+  status: 'Completed',
+  year: '2026',
   },
   // ── Add more projects below this line ──────────────────────
   // {
