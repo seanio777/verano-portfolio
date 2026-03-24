@@ -1,4 +1,4 @@
-import { FiGithub, FiExternalLink, FiCode, FiFolder, FiUsers, FiMonitor, FiClipboard } from 'react-icons/fi'
+import { FiGithub, FiExternalLink, FiCode, FiUsers, FiMonitor, FiClipboard, FiTrendingUp } from 'react-icons/fi'
 import { FaGamepad } from 'react-icons/fa'
 
 const projects = [
@@ -59,6 +59,18 @@ const projects = [
     color: '#0d6efd',
     github: 'https://github.com/seanio777/enrollment-ui-design.git',  // ← update after upload
     demo: 'https://adei-enrollment-form.netlify.app/',   // ← add your Netlify link here
+    status: 'Completed',
+    year: '2026',
+  },
+  {
+    title: 'CryptoPulse — Live Crypto Dashboard',
+    description:
+      'A real-time cryptocurrency dashboard built with React and Vite, powered by the CoinGecko API. Features live price tracking for the top 10 coins, multi-currency support (USD, PHP, EUR, JPY), switchable line and bar charts via Recharts, persistent search and settings via localStorage, dedicated market analysis page, and a polished dark UI built with Tailwind CSS.',
+    tech: ['React', 'Vite', 'Tailwind CSS', 'Recharts', 'CoinGecko API', 'React Router'],
+    icon: <FiTrendingUp size={22} />,
+    color: '#22d3ee',
+    github: 'https://github.com/seanio777/crypto-pulse.git',  // ← update after upload
+    demo: 'https://crypto-pulse-five-eosin.vercel.app/',   // ← paste your Vercel link here
     status: 'Completed',
     year: '2026',
   },
