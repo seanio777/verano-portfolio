@@ -3,11 +3,11 @@ import { FiCalendar, FiMapPin, FiMonitor } from 'react-icons/fi'
 // ← REPLACE all entries with your actual seminars/trainings
 const seminars = [
   {
-    title: 'National ICT Summit 2024',
-    organizer: 'DICT Philippines',
-    date: 'November 2024',
-    location: 'Manila, Philippines',
-    type: 'Seminar',
+    title: 'Scholars\' Values Formation Orientation',
+    organizer: 'DOST-SEI',
+    date: 'February 2025',
+    location: 'Zoom / Virtual',
+    type: 'Webinar',
     tags: ['ICT', 'Technology', 'Innovation'],
   },
   {
