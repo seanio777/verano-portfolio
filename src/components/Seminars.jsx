@@ -3,6 +3,14 @@ import { FiCalendar, FiMapPin, FiMonitor } from 'react-icons/fi'
 // ← REPLACE all entries with your actual seminars/trainings
 const seminars = [
   {
+    title: 'Cyber-Aware, Cyber-Safe: Strengthening Our Digital Defenses',
+    organizer: 'Computer Engineering Student Society (CoESS) - TIP Manila',
+    date: 'October 2024',
+    location: 'On-campus',
+    type: 'Seminar',
+    tags: ['Cybersecurity Awareness', 'Best Practices'],
+  },
+  {
     title: 'Scholars\' Values Formation Orientation',
     organizer: 'DOST-SEI',
     date: 'February 2025',
@@ -11,22 +19,22 @@ const seminars = [
     tags: ['Social Responsibility', 'Community Building'],
   },
   {
-    title: 'Cyber-Aware, Cyber-Safe: Strengthening Our Digital Defenses',
-    organizer: 'Computer Engineering Student Society (CoESS)',
-    date: 'October 2024',
+    title: 'Cybersecurity Awareness Month Seminar',
+    organizer: 'Computer Engineering Student Society (CoESS) - TIP Manila',
+    date: 'October 2025',
     location: 'On-campus',
     type: 'Seminar',
-    tags: ['Cybersecurity Awareness', 'Best Practices'],
+    tags: ['Digital Ethics', 'Global Security Standards'],
   },
   {
-    title: 'IoT and Embedded Systems Workshop',
-    organizer: 'IEEE Philippines',
-    date: 'July 2024',
-    location: 'Online / Virtual',
-    type: 'Workshop',
-    tags: ['IoT', 'Embedded Systems', 'Arduino'],
+    title: 'Program Elective Seminar',
+    organizer: 'Computer Engineering Student Society (CoESS) - TIP Manila',
+    date: 'January 2026',
+    location: 'On-campus',
+    type: 'Seminar',
+    tags: ['Academic Specialization', 'Domain Awareness'],
   },
-  {
+  /*{
     title: 'Web Development Bootcamp',
     organizer: 'Google Developers Group',
     date: 'March 2024',
@@ -41,7 +49,7 @@ const seminars = [
     location: 'On-campus',
     type: 'Seminar',
     tags: ['Career', 'Professional Development'],
-  },
+  },*/
 ]
 
 const typeColors = {
