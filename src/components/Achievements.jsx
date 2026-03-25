@@ -19,7 +19,7 @@ const achievements = [
   },
   {
     title: 'With High Honors',
-    subtitle: 'Senior High School Graduation | PNHS-Main',
+    subtitle: 'Senior High School Graduation',
     description: 'Graduated Senior High School With High Honors, demonstrated outstanding academic performance and consistent excellence throughout the entire program.',
     icon: <FaStar size={20} />,
     color: '#fbbf24',
