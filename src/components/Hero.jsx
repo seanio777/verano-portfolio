@@ -189,7 +189,7 @@ export default function Hero() {
           }}>
             {/* Replace src with your actual photo import */}
             <img
-              src="/profile.jpg"
+              src="profile.jpg"
               alt="Profile"
               style={{
                 width: '100%',
