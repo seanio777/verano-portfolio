@@ -9,7 +9,7 @@ const projects = [
     tech: ['C++', 'Console', 'Game Design'],
     icon: <FaGamepad size={22} />,
     color: '#f87171',
-    github: 'https://github.com/seanio777/mr-bunny-game.git',  // ← REPLACE
+    github: 'https://github.com/seanio777/mr-bunny-game.git',
     demo: '',
     status: 'Completed',
     year: '2025',
@@ -21,7 +21,7 @@ const projects = [
     tech: ['Python', 'Ursina Engine', 'OOP', '3D Game Dev'],
     icon: <FaGamepad size={22} />,
     color: '#f87171',
-    github: 'https://github.com/seanio777/bullet-rush.git',  // ← update after upload
+    github: 'https://github.com/seanio777/bullet-rush.git', 
     demo: '',
     status: 'Completed',
     year: '2025',
@@ -33,7 +33,7 @@ const projects = [
     tech: ['C++', 'Data Structures', 'Group Project'],
     icon: <FiUsers size={22} />,
     color: '#34d399',
-    github: 'https://github.com/seanio777/guidance-counseling-system.git',  // ← update after upload
+    github: 'https://github.com/seanio777/guidance-counseling-system.git', 
     demo: '',
     status: 'Completed',
     year: '2025',
@@ -57,8 +57,8 @@ const projects = [
     tech: ['React', 'Vite', 'JavaScript', 'CSS', 'Responsive Design'],
     icon: <FiClipboard size={22} />,
     color: '#0d6efd',
-    github: 'https://github.com/seanio777/enrollment-ui-design.git',  // ← update after upload
-    demo: 'https://adei-enrollment-form.netlify.app/',   // ← add your Netlify link here
+    github: 'https://github.com/seanio777/enrollment-ui-design.git',  
+    demo: 'https://adei-enrollment-form.netlify.app/',   
     status: 'Completed',
     year: '2026',
   },
@@ -69,8 +69,8 @@ const projects = [
     tech: ['React', 'Vite', 'Tailwind CSS', 'Recharts', 'CoinGecko API', 'React Router'],
     icon: <FiTrendingUp size={22} />,
     color: '#22d3ee',
-    github: 'https://github.com/seanio777/crypto-pulse.git',  // ← update after upload
-    demo: 'https://crypto-pulse-five-eosin.vercel.app/',   // ← paste your Vercel link here
+    github: 'https://github.com/seanio777/crypto-pulse.git',  
+    demo: 'https://crypto-pulse-five-eosin.vercel.app/', 
     status: 'Completed',
     year: '2026',
   },
@@ -81,8 +81,8 @@ const projects = [
     tech: ['React', 'Vite', 'CSS', 'Google Maps'],
     icon: <FiHeart size={22} />,
     color: '#C5A059',
-    github: 'https://github.com/seanio777/palazzo-rsvp.git',  // ← update after upload
-    demo: 'https://palazzo-rsvp.vercel.app/',   // ← add your Vercel/Netlify link
+    github: 'https://github.com/seanio777/palazzo-rsvp.git', 
+    demo: 'https://palazzo-rsvp.vercel.app/',  
     status: 'Completed',
     year: '2026',
   },
