@@ -82,7 +82,7 @@ const projects = [
     icon: <FiHeart size={22} />,
     color: '#C5A059',
     github: 'https://github.com/seanio777/palazzo-rsvp.git',  // ← update after upload
-    demo: '',   // ← add your Vercel/Netlify link
+    demo: 'https://palazzo-rsvp.vercel.app/',   // ← add your Vercel/Netlify link
     status: 'In Progress',
     year: '2026',
   },
