@@ -1,4 +1,4 @@
-import { FiGithub, FiExternalLink, FiCode, FiUsers, FiMonitor, FiClipboard, FiTrendingUp } from 'react-icons/fi'
+import { FiGithub, FiExternalLink, FiCode, FiUsers, FiMonitor, FiClipboard, FiTrendingUp, FiHeart } from 'react-icons/fi'
 import { FaGamepad } from 'react-icons/fa'
 
 const projects = [
@@ -74,18 +74,18 @@ const projects = [
     status: 'Completed',
     year: '2026',
   },
-  // ── Add more projects below this line ──────────────────────
-  // {
-  //   title: 'Your Project Title',
-  //   description: 'Brief description of what the project does.',
-  //   tech: ['Language', 'Tool', 'Framework'],
-  //   icon: <FiCode size={22} />,
-  //   color: '#a78bfa',
-  //   github: 'https://github.com/YourUsername/repo-name',
-  //   demo: 'https://your-live-demo.com',   // or '' if none
-  //   status: 'Completed',   // or 'In Progress' or 'Ongoing'
-  //   year: '2024',
-  // },
+  {
+    title: 'Palazzo Verde — Wedding RSVP Website',
+    description:
+      'An elegant wedding invitation and RSVP web app built with React. Features a cinematic hero section, wedding details strip, attire guide with color palette swatches, embedded Google Maps venue locator, and a refined RSVP form with attendance tracking and personalized success messages.',
+    tech: ['React', 'Vite', 'CSS', 'Google Maps'],
+    icon: <FiHeart size={22} />,
+    color: '#C5A059',
+    github: 'https://github.com/seanio777/palazzo-rsvp.git',  // ← update after upload
+    demo: '',   // ← add your Vercel/Netlify link
+    status: 'In Progress',
+    year: '2026',
+  },
 ]
 
 const statusColors = {
