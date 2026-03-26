@@ -29,8 +29,8 @@ export default function ThemeToggle() {
       title={isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
       style={{
         position:       'fixed',
-        bottom:         40,
-        right:          100,   // sits left of the scroll-to-top button
+        bottom:         100, // sits above the scroll-to-top button
+        right:          40,  
         zIndex:         9000,
         width:          48,
         height:         48,
