@@ -75,8 +75,8 @@ export default function Hero() {
           }}>
             <p style={{ marginBottom: 12 }}>
               His name is <strong style={{ color:'var(--white)' }}>Jose Antonio C. Verano</strong>, born on{' '}
-              <strong style={{ color:'var(--white)' }}>[Your Birthdate]</strong>{/* ← REPLACE */}, and currently
-              residing in <strong style={{ color:'var(--white)' }}>[Your City/Municipality, Province]</strong>.{/* ← REPLACE */}
+              <strong style={{ color:'var(--white)' }}>November 5, 2006</strong>{/* ← REPLACE */}, and currently
+              residing in <strong style={{ color:'var(--white)' }}>Paranaque City, Metro Manila</strong>.{/* ← REPLACE */}
             </p>
 
             <p style={{ marginBottom: 12 }}>
@@ -102,9 +102,9 @@ export default function Hero() {
               <strong style={{ color:'var(--white)' }}>BS Computer Engineering</strong> at the{' '}
               <strong style={{ color:'var(--white)' }}>Technological Institute of the Philippines – Manila</strong>,
               with an expected graduation of{' '}
-              <strong style={{ color:'var(--white)' }}>[Expected Year]</strong>.{/* ← REPLACE */}{' '}
+              <strong style={{ color:'var(--white)' }}>2028</strong>.{/* ← REPLACE */}{' '}
               After graduation, he aspires to{' '}
-              <strong style={{ color:'var(--white)' }}>[Your Plans]</strong>.{/* ← REPLACE */}
+              <strong style={{ color:'var(--white)' }}>be a Cybersecurity Analyst</strong>.{/* ← REPLACE */}
             </p>
           </div>
 
