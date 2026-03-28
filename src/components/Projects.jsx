@@ -94,7 +94,7 @@ const projects = [
     year: '2026',
     image: '',
   },
-  {
+  /*{
     title: 'Project Gatekeeper',
     description:
       'A web-based application built with React and Vite. [Add your description here — what does it do? What problem does it solve?]',
@@ -106,7 +106,7 @@ const projects = [
     status: 'Completed',
     year: '2024',
     image: '',
-  },
+  },*/
 ]
 
 const statusColors = {
