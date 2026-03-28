@@ -1,5 +1,5 @@
 import { FiAward } from 'react-icons/fi'
-import { FaTrophy, FaMedal, FaStar, FaNewspaper } from 'react-icons/fa'
+import { FaTrophy, FaMedal, FaStar, FaNewspaper, FaShieldAlt } from 'react-icons/fa'
 
 // ← REPLACE with your actual achievements
 const achievements = [
@@ -30,6 +30,13 @@ const achievements = [
     description: 'Placed 5th in the Division Schools Press Conference during elementary, competing in the Filipino journalism category of Pagwawasto at Pag-uulo ng Balita (News Editing and Headline Writing), demonstrating strong language proficiency and journalistic skills at the division level.',
     icon: <FaNewspaper size={20} />,
     color: '#60a5fa',
+  },
+  {
+    title: 'Introduction to Cybersecurity Badge',
+    subtitle: 'Cisco Networking Academy | Credly Verified',
+    description: 'Earned the official digital badge upon completing the Introduction to Cybersecurity course by Cisco Networking Academy, recognizing foundational knowledge in cybersecurity concepts, threats, and defenses.',
+    icon: <FaShieldAlt size={20} />,
+    color: '#00bceb',   // Cisco's signature blue
   },
 ]
 
