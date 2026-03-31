@@ -173,7 +173,7 @@ export default function References() {
             color: 'var(--white-dim)',
             letterSpacing: '0.1em',
           }}>
-            © {new Date().getFullYear()} YOUR NAME — All Rights Reserved
+            © {new Date().getFullYear()} JOSE ANTONIO VERANO — All Rights Reserved
           </span>
           <span style={{
             fontFamily: 'var(--font-body)',
