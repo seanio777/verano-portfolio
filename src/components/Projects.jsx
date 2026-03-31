@@ -10,24 +10,24 @@ const projects = [
     tech: ['C++', 'Functions', 'Control Flow', 'Game Logic'],
     icon: <FaGamepad size={22} />,
     color: '#f87171',
-    github: 'https://github.com/YourUsername/mr-bunny-game',
+    github: 'https://github.com/seanio777/mr-bunny-game.git',
     demo: '',
     status: 'Completed',
     year: '2024',
-    image: '',  // ← add your screenshot filename e.g. '/previews/mr-bunny.png'
+    image: '/public/evil bunny.jpg',
   },
   {
-    title: 'First-Person Shooter (3D)',
+    title: 'Bullet Rush',
     description:
       'A 3D first-person shooter game built with Python and the Ursina Engine. Features enemy AI, a health and ammo system, score tracking, a high score board, level progression, and pause/restart functionality.',
-    tech: ['Python', 'Ursina Engine', 'OOP', '3D Game Dev'],
+    tech: ['Python', 'Ursina Engine', 'OOP', '3D Game Dev', 'Group Project'],
     icon: <FaGamepad size={22} />,
     color: '#f87171',
-    github: 'https://github.com/YourUsername/fps-shooter-game',
+    github: 'https://github.com/seanio777/bullet-rush.git',
     demo: '',
     status: 'Completed',
     year: '2024',
-    image: '',
+    image: '/public/bullet-rush.png',
   },
   {
     title: 'Guidance Counseling Appointment System',
@@ -36,11 +36,11 @@ const projects = [
     tech: ['C++', 'Data Structures', 'OOP', 'BST', 'Graph', 'Group Project'],
     icon: <FiUsers size={22} />,
     color: '#34d399',
-    github: 'https://github.com/YourUsername/guidance-counseling-system',
+    github: 'https://github.com/seanio777/guidance-counseling-system.git',
     demo: '',
     status: 'Completed',
     year: '2024',
-    image: '',
+    image: '/public/counseling.png',
   },
   {
     title: 'SkyLine Analytics — Login & Dashboard UI',
@@ -49,11 +49,11 @@ const projects = [
     tech: ['React', 'Vite', 'JavaScript', 'CSS', 'Glassmorphism'],
     icon: <FiMonitor size={22} />,
     color: '#10b981',
-    github: 'https://github.com/YourUsername/skyline-analytics',
-    demo: '',
+    github: 'https://github.com/seanio777/project-gatekeeper.git',
+    demo: 'https://seanio777.github.io/project-gatekeeper/',
     status: 'Completed',
     year: '2024',
-    image: '',
+    image: '/public/login-ui.png',
   },
   {
     title: 'ADEi University — Student Enrollment Portal',
@@ -62,11 +62,11 @@ const projects = [
     tech: ['React', 'Vite', 'JavaScript', 'CSS', 'Responsive Design'],
     icon: <FiClipboard size={22} />,
     color: '#0d6efd',
-    github: 'https://github.com/YourUsername/adei-enrollment-form',
-    demo: '',
+    github: 'https://github.com/seanio777/enrollment-ui-design.git',
+    demo: 'https://adei-enrollment-form.netlify.app/',
     status: 'Completed',
     year: '2024',
-    image: '',
+    image: '/public/adei-enrolment.png',
   },
   {
     title: 'CryptoPulse — Live Crypto Dashboard',
@@ -75,11 +75,11 @@ const projects = [
     tech: ['React', 'Vite', 'Tailwind CSS', 'Recharts', 'CoinGecko API', 'React Router'],
     icon: <FiTrendingUp size={22} />,
     color: '#22d3ee',
-    github: 'https://github.com/YourUsername/crypto-pulse',
-    demo: '',
+    github: 'https://github.com/seanio777/crypto-pulse.git',
+    demo: 'https://crypto-pulse-five-eosin.vercel.app/',
     status: 'Completed',
     year: '2025',
-    image: '',
+    image: '/public/crypto-pulse.png',
   },
   {
     title: 'Palazzo Verde — Wedding RSVP Website',
@@ -88,11 +88,11 @@ const projects = [
     tech: ['React', 'Vite', 'CSS', 'Google Maps'],
     icon: <FiHeart size={22} />,
     color: '#C5A059',
-    github: 'https://github.com/YourUsername/palazzo-rsvp',
-    demo: '',
+    github: 'https://github.com/seanio777/palazzo-rsvp.git',
+    demo: 'https://palazzo-rsvp.vercel.app/',
     status: 'In Progress',
     year: '2026',
-    image: '',
+    image: '/public/palazzo-rsvp.png',
   },
   /*{
     title: 'Project Gatekeeper',
@@ -280,7 +280,7 @@ export default function Projects() {
         }}>
           <p style={{ fontFamily:'var(--font-body)', fontSize:'0.9rem', color:'var(--white-muted)', lineHeight:1.7 }}>
             More projects are being developed and will be added soon.{' '}
-            <a href="https://github.com/YourUsername" target="_blank" rel="noreferrer" style={{
+            <a href="https://github.com/seanio777" target="_blank" rel="noreferrer" style={{
               color:'var(--cyan-accent)', textDecoration:'none', fontWeight:500, cursor:'none',
             }}
               onMouseEnter={e => e.currentTarget.style.textDecoration = 'underline'}
