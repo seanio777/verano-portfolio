@@ -14,7 +14,7 @@ const projects = [
     demo: '',
     status: 'Completed',
     year: '2024',
-    image: '/public/evil bunny.jpg',
+    image: '/evil bunny.jpg',
   },
   {
     title: 'Bullet Rush',
@@ -27,7 +27,7 @@ const projects = [
     demo: '',
     status: 'Completed',
     year: '2024',
-    image: '/public/bullet-rush.png',
+    image: '/bullet-rush.png',
   },
   {
     title: 'Guidance Counseling Appointment System',
@@ -40,7 +40,7 @@ const projects = [
     demo: '',
     status: 'Completed',
     year: '2024',
-    image: '/public/counseling.png',
+    image: '/counseling.png',
   },
   {
     title: 'SkyLine Analytics — Login & Dashboard UI',
@@ -53,7 +53,7 @@ const projects = [
     demo: 'https://seanio777.github.io/project-gatekeeper/',
     status: 'Completed',
     year: '2024',
-    image: '/public/login-ui.png',
+    image: '/login-ui.png',
   },
   {
     title: 'ADEi University — Student Enrollment Portal',
@@ -66,7 +66,7 @@ const projects = [
     demo: 'https://adei-enrollment-form.netlify.app/',
     status: 'Completed',
     year: '2024',
-    image: '/public/adei-enrolment.png',
+    image: '/adei-enrolment.png',
   },
   {
     title: 'CryptoPulse — Live Crypto Dashboard',
@@ -79,7 +79,7 @@ const projects = [
     demo: 'https://crypto-pulse-five-eosin.vercel.app/',
     status: 'Completed',
     year: '2025',
-    image: '/public/crypto-pulse.png',
+    image: '/crypto-pulse.png',
   },
   {
     title: 'Palazzo Verde — Wedding RSVP Website',
@@ -92,7 +92,7 @@ const projects = [
     demo: 'https://palazzo-rsvp.vercel.app/',
     status: 'In Progress',
     year: '2026',
-    image: '/public/palazzo-rsvp.png',
+    image: '/palazzo-rsvp.png',
   },
   /*{
     title: 'Project Gatekeeper',
