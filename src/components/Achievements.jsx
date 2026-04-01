@@ -1,7 +1,7 @@
-import { FiAward } from 'react-icons/fi'
-import { FaTrophy, FaMedal, FaStar, FaNewspaper, FaShieldAlt } from 'react-icons/fa'
+import { FiAward, FiExternalLink } from 'react-icons/fi'
+import { FaTrophy, FaMedal, FaStar, FaNewspaper } from 'react-icons/fa'
 
-// ← REPLACE with your actual achievements
+// certificateLink: paste the URL of proof/certificate if available, or leave '' to hide button
 const achievements = [
   {
     title: "Dean's Lister",
@@ -9,34 +9,39 @@ const achievements = [
     description: 'Recognized for outstanding academic performance with a GWA of 1.55, qualifying for the Dean\'s List.',
     icon: <FaTrophy size={20} />,
     color: '#fbbf24',
+    certificateLink: '', // ← paste proof URL here if available
   },
   {
-    title: '2nd Runner Up - Inhinyera\'s Shirt Design Competition',
-    subtitle: 'Inhinyera - TIP Manila',
+    title: '2nd Runner Up – Inhinyera\'s Shirt Design Competition',
+    subtitle: 'Inhinyera | TIP Manila',
     description: 'Awarded 2nd runner up in the Shirt Design Competition held during the celebration of Women\'s Month and Inhinyera\'s 10th Founding Anniversary.',
     icon: <FaMedal size={20} />,
     color: '#cd7f32',
+    certificateLink: '',
   },
   {
     title: 'With High Honors',
-    subtitle: 'Senior High School Graduation',
-    description: 'Graduated Senior High School With High Honors, demonstrated outstanding academic performance and consistent excellence throughout the entire program.',
+    subtitle: 'Senior High School Graduation | PNHS Main',
+    description: 'Graduated Senior High School With High Honors, recognition given to students who demonstrated outstanding academic performance throughout the Senior High School program.',
     icon: <FaStar size={20} />,
     color: '#fbbf24',
+    certificateLink: '',
   },
   {
-    title: '5th Place - Division Schools Press Conference',
+    title: 'With High Honors',
+    subtitle: 'Junior High School Graduation | PNHS-STE',
+    description: 'Completed Junior High School at the Parañaque National High School-STE Program With High Honors, demonstrating consistent academic excellence throughout the program.',
+    icon: <FaStar size={20} />,
+    color: '#fbbf24',
+    certificateLink: '',
+  },
+  {
+    title: '5th Place – Division Schools Press Conference',
     subtitle: 'Pagwawasto at Pag-uulo ng Balita | Elementary',
-    description: 'Placed 5th in the Division Schools Press Conference during elementary, competing in the Filipino journalism category of Pagwawasto at Pag-uulo ng Balita (News Editing and Headline Writing), demonstrating strong language proficiency and journalistic skills at the division level.',
+    description: 'Placed 5th in the Division Schools Press Conference during elementary, competing in the Filipino journalism category of Pagwawasto at Pag-uulo ng Balita (News Editing and Headline Writing).',
     icon: <FaNewspaper size={20} />,
     color: '#60a5fa',
-  },
-  {
-    title: 'Introduction to Cybersecurity Badge',
-    subtitle: 'Cisco Networking Academy | Credly Verified',
-    description: 'Earned the official digital badge upon completing the Introduction to Cybersecurity course by Cisco Networking Academy, recognizing foundational knowledge in cybersecurity concepts, threats, and defenses.',
-    icon: <FaShieldAlt size={20} />,
-    color: '#00bceb',   // Cisco's signature blue
+    certificateLink: '',
   },
 ]
 
@@ -45,12 +50,9 @@ export default function Achievements() {
     <section id="achievements" style={{ position: 'relative', overflow: 'hidden' }}>
       <div className="grid-bg" />
       <div className="glow-orb" style={{
-        width: 500,
-        height: 500,
+        width: 500, height: 500,
         background: 'radial-gradient(circle, rgba(30,91,255,0.1) 0%, transparent 70%)',
-        top: '50%',
-        right: '-10%',
-        transform: 'translateY(-50%)',
+        top: '50%', right: '-10%', transform: 'translateY(-50%)',
       }} />
 
       <div className="container" style={{ position: 'relative', zIndex: 1 }}>
@@ -61,59 +63,90 @@ export default function Achievements() {
           Awards &amp; <span>Recognition</span>
         </h2>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 28 }}>
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 340px), 1fr))',
+          gap: 28,
+        }}>
           {achievements.map((a, i) => (
             <div key={i} className="card" style={{ position: 'relative', overflow: 'hidden' }}>
-              {/* Number watermark */}
+              {/* Watermark number */}
               <div style={{
-                position: 'absolute',
-                top: -10,
-                right: 16,
+                position: 'absolute', top: -10, right: 16,
                 fontFamily: 'var(--font-display)',
-                fontSize: '5rem',
-                fontWeight: 900,
-                color: 'rgba(30, 91, 255, 0.06)',
-                lineHeight: 1,
-                userSelect: 'none',
+                fontSize: '5rem', fontWeight: 900,
+                color: 'rgba(30,91,255,0.06)',
+                lineHeight: 1, userSelect: 'none',
               }}>0{i + 1}</div>
 
               <div style={{ display: 'flex', gap: 18, alignItems: 'flex-start' }}>
+                {/* Icon */}
                 <div style={{
-                  width: 52,
-                  height: 52,
-                  borderRadius: 12,
+                  width: 52, height: 52, borderRadius: 12,
                   background: `${a.color}18`,
                   border: `1px solid ${a.color}30`,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  color: a.color,
-                  flexShrink: 0,
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  color: a.color, flexShrink: 0,
                 }}>
                   {a.icon}
                 </div>
-                <div>
+
+                <div style={{ flex: 1, minWidth: 0 }}>
                   <h3 style={{
                     fontFamily: 'var(--font-heading)',
-                    fontSize: '1.15rem',
-                    fontWeight: 700,
-                    color: 'var(--white)',
-                    marginBottom: 4,
+                    fontSize: '1.05rem', fontWeight: 700,
+                    color: 'var(--white)', marginBottom: 4,
                   }}>{a.title}</h3>
+
                   <p style={{
                     fontFamily: 'var(--font-display)',
-                    fontSize: '0.62rem',
-                    letterSpacing: '0.1em',
-                    color: a.color,
-                    marginBottom: 12,
+                    fontSize: '0.62rem', letterSpacing: '0.1em',
+                    color: a.color, marginBottom: 10,
                     textTransform: 'uppercase',
                   }}>{a.subtitle}</p>
+
                   <p style={{
                     fontFamily: 'var(--font-body)',
-                    fontSize: '0.85rem',
-                    color: 'var(--white-muted)',
-                    lineHeight: 1.7,
+                    fontSize: '0.85rem', color: 'var(--white-muted)',
+                    lineHeight: 1.7, marginBottom: a.certificateLink ? 14 : 0,
                   }}>{a.description}</p>
+
+                  {/* ── Certificate / Proof button — only shows if link provided ── */}
+                  {a.certificateLink && (
+                    <a
+                      href={a.certificateLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: 5,
+                        fontFamily: 'var(--font-display)',
+                        fontSize: '0.55rem',
+                        letterSpacing: '0.1em',
+                        color: a.color,
+                        background: `${a.color}12`,
+                        border: `1px solid ${a.color}30`,
+                        padding: '5px 12px',
+                        borderRadius: 4,
+                        textDecoration: 'none',
+                        textTransform: 'uppercase',
+                        cursor: 'none',
+                        transition: 'all 0.3s ease',
+                        marginTop: 4,
+                      }}
+                      onMouseEnter={e => {
+                        e.currentTarget.style.background = `${a.color}22`
+                        e.currentTarget.style.borderColor = a.color
+                      }}
+                      onMouseLeave={e => {
+                        e.currentTarget.style.background = `${a.color}12`
+                        e.currentTarget.style.borderColor = `${a.color}30`
+                      }}
+                    >
+                      <FiExternalLink size={10} /> View Proof
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
