@@ -1,46 +1,43 @@
-import { FiCalendar, FiMapPin, FiMonitor } from 'react-icons/fi'
+import { FiCalendar, FiMapPin, FiMonitor, FiExternalLink } from 'react-icons/fi'
 
 // ← REPLACE all entries with your actual seminars/trainings
+// For certificateLink: put the URL if you have an e-certificate, or leave as '' to hide the button
 const seminars = [
   {
-    title: 'Cyber-Aware, Cyber-Safe: Strengthening Our Digital Defenses',
-    organizer: 'Computer Engineering Student Society (CoESS) - TIP Manila',
-    date: 'October 2024',
-    location: 'On-campus',
+    title: 'National ICT Summit 2024',
+    organizer: 'DICT Philippines',
+    date: 'November 2024',
+    location: 'Manila, Philippines',
     type: 'Seminar',
-    tags: ['Cybersecurity Awareness', 'Best Practices'],
+    tags: ['ICT', 'Technology', 'Innovation'],
+    certificateLink: '', // ← paste URL here if you have e-cert, leave '' to hide button
   },
   {
-    title: 'Scholars\' Values Formation Orientation',
-    organizer: 'DOST-SEI',
-    date: 'February 2025',
-    location: 'Zoom / Virtual',
-    type: 'Webinar',
-    tags: ['Social Responsibility', 'Community Building'],
+    title: 'Cybersecurity Awareness Training',
+    organizer: 'Your University - IT Department',
+    date: 'September 2024',
+    location: 'On-campus',
+    type: 'Training',
+    tags: ['Cybersecurity', 'Networking'],
+    certificateLink: '',
   },
   {
-    title: 'Cybersecurity Awareness Month Seminar',
-    organizer: 'Computer Engineering Student Society (CoESS) - TIP Manila',
-    date: 'October 2025',
-    location: 'On-campus',
-    type: 'Seminar',
-    tags: ['Digital Ethics', 'Global Security Standards'],
+    title: 'IoT and Embedded Systems Workshop',
+    organizer: 'IEEE Philippines',
+    date: 'July 2024',
+    location: 'Online / Virtual',
+    type: 'Workshop',
+    tags: ['IoT', 'Embedded Systems', 'Arduino'],
+    certificateLink: '',
   },
   {
-    title: 'Program Elective Seminar',
-    organizer: 'Computer Engineering Student Society (CoESS) - TIP Manila',
-    date: 'January 2026',
-    location: 'On-campus',
-    type: 'Seminar',
-    tags: ['Academic Specialization', 'Domain Awareness'],
-  },
-  /*{
     title: 'Web Development Bootcamp',
     organizer: 'Google Developers Group',
     date: 'March 2024',
     location: 'Cebu City',
     type: 'Bootcamp',
     tags: ['HTML', 'CSS', 'JavaScript', 'React'],
+    certificateLink: '',
   },
   {
     title: 'Career Readiness Seminar',
@@ -49,11 +46,12 @@ const seminars = [
     location: 'On-campus',
     type: 'Seminar',
     tags: ['Career', 'Professional Development'],
-  },*/
+    certificateLink: '',
+  },
 ]
 
 const typeColors = {
-  Seminar: 'var(--cyan-accent)',
+  Seminar:  'var(--cyan-accent)',
   Training: 'var(--blue-bright)',
   Workshop: '#a78bfa',
   Bootcamp: '#34d399',
@@ -63,11 +61,9 @@ export default function Seminars() {
   return (
     <section id="seminars" style={{ position: 'relative', overflow: 'hidden' }}>
       <div className="glow-orb" style={{
-        width: 400,
-        height: 400,
+        width: 400, height: 400,
         background: 'radial-gradient(circle, rgba(0,212,255,0.06) 0%, transparent 70%)',
-        bottom: '0%',
-        left: '30%',
+        bottom: '0%', left: '30%',
       }} />
 
       <div className="container" style={{ position: 'relative', zIndex: 1 }}>
@@ -78,22 +74,62 @@ export default function Seminars() {
           Learning &amp; <span>Development</span>
         </h2>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: 24 }}>
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 320px), 1fr))',
+          gap: 24,
+        }}>
           {seminars.map((s, i) => (
             <div key={i} className="card">
-              {/* Type badge */}
+              {/* Type badge + optional cert button */}
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
                 <span style={{
                   fontFamily: 'var(--font-display)',
                   fontSize: '0.6rem',
                   letterSpacing: '0.2em',
                   color: typeColors[s.type] || 'var(--blue-bright)',
-                  background: `${typeColors[s.type]}18`,
-                  border: `1px solid ${typeColors[s.type]}33`,
+                  background: `${typeColors[s.type] || 'var(--blue-bright)'}18`,
+                  border: `1px solid ${typeColors[s.type] || 'var(--blue-bright)'}33`,
                   padding: '4px 10px',
                   borderRadius: 4,
                   textTransform: 'uppercase',
                 }}>{s.type}</span>
+
+                {/* ── Certificate button — only shows if certificateLink is not empty ── */}
+                {s.certificateLink && (
+                  <a
+                    href={s.certificateLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 5,
+                      fontFamily: 'var(--font-display)',
+                      fontSize: '0.55rem',
+                      letterSpacing: '0.1em',
+                      color: 'var(--cyan-accent)',
+                      background: 'rgba(0,212,255,0.08)',
+                      border: '1px solid rgba(0,212,255,0.25)',
+                      padding: '4px 10px',
+                      borderRadius: 4,
+                      textDecoration: 'none',
+                      textTransform: 'uppercase',
+                      cursor: 'none',
+                      transition: 'all 0.3s ease',
+                    }}
+                    onMouseEnter={e => {
+                      e.currentTarget.style.background = 'rgba(0,212,255,0.15)'
+                      e.currentTarget.style.borderColor = 'var(--cyan-accent)'
+                    }}
+                    onMouseLeave={e => {
+                      e.currentTarget.style.background = 'rgba(0,212,255,0.08)'
+                      e.currentTarget.style.borderColor = 'rgba(0,212,255,0.25)'
+                    }}
+                  >
+                    <FiExternalLink size={10} /> View Certificate
+                  </a>
+                )}
               </div>
 
               <h3 style={{
