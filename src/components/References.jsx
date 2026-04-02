@@ -1,8 +1,5 @@
 import { FiMail, FiPhone, FiUser } from 'react-icons/fi'
 
-// ← REPLACE with your actual references
-// photo: put the filename e.g. 'ref-reyes.jpg' (place in /public/references/)
-// or leave as '' to show a placeholder silhouette
 const references = [
   {
     name: 'Dr. Jennifer B. Enriquez',
@@ -11,25 +8,7 @@ const references = [
     email: 'jdelacruz@tip.edu.ph',
     phone: '+63 9XX XXX XXXX',
     relation: 'Program Chair',
-    photo: '/prog-chair.jpg', // ← e.g. '/references/ref-delacruz.jpg'
-  },
-  {
-    name: 'Dr. Maria Santos',
-    position: 'Professor, Electronics Engineering',
-    institution: 'Technological Institute of the Philippines – Manila',
-    email: 'msantos@tip.edu.ph',
-    phone: '+63 9XX XXX XXXX',
-    relation: 'Faculty Reference',
-    photo: '',
-  },
-  {
-    name: 'Engr. Pedro Reyes',
-    position: 'Industry Supervisor',
-    institution: 'Company / Organization Name',
-    email: 'preyes@company.com',
-    phone: '+63 9XX XXX XXXX',
-    relation: 'Industry Reference',
-    photo: '',
+    photo: '/prog-chair.jpg', 
   },
 ]
 
