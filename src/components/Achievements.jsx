@@ -9,7 +9,7 @@ const achievements = [
     description: 'Recognized for outstanding academic performance with a GWA of 1.55, qualifying for the Dean\'s List.',
     icon: <FaTrophy size={20} />,
     color: '#fbbf24',
-    certificateLink: '', // ← paste proof URL here if available
+    certificateLink: 'https://drive.google.com/file/d/1vTqX1dIC-hnsagbXYykng9oqth7B_8Gk/view?usp=sharing', // ← paste proof URL here if available
   },
   {
     title: '2nd Runner Up – Inhinyera\'s Shirt Design Competition',
@@ -17,7 +17,7 @@ const achievements = [
     description: 'Awarded 2nd runner up in the Shirt Design Competition held during the celebration of Women\'s Month and Inhinyera\'s 10th Founding Anniversary.',
     icon: <FaMedal size={20} />,
     color: '#cd7f32',
-    certificateLink: '',
+    certificateLink: 'https://drive.google.com/file/d/17o8R2G2uJ_jHoh5iUJtyuIgCFMn-ywGT/view?usp=drive_link',
   },
   {
     title: 'With High Honors',
@@ -25,7 +25,7 @@ const achievements = [
     description: 'Graduated Senior High School With High Honors, recognition given to students who demonstrated outstanding academic performance throughout the Senior High School program.',
     icon: <FaStar size={20} />,
     color: '#fbbf24',
-    certificateLink: '',
+    certificateLink: 'https://drive.google.com/file/d/1wc-JB4PxChVfU2BZF8ihT7d-dGKdxyra/view?usp=drive_link',
   },
   {
     title: 'With High Honors',
