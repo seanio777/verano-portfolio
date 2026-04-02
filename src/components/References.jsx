@@ -11,7 +11,7 @@ const references = [
     email: 'jdelacruz@tip.edu.ph',
     phone: '+63 9XX XXX XXXX',
     relation: 'Program Chair',
-    photo: '', // ← e.g. '/references/ref-delacruz.jpg'
+    photo: '/prog-chair.jpg', // ← e.g. '/references/ref-delacruz.jpg'
   },
   {
     name: 'Dr. Maria Santos',

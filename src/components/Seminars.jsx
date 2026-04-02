@@ -17,7 +17,7 @@ const seminars = [
     location: 'Zoom / Virtual',
     type: 'Webinar',
     tags: ['Social Responsibility', 'Community Building'],
-    certificateLink: '',
+    certificateLink: 'https://drive.google.com/file/d/1hKExn6gvHOPygUPZp2d_fwrB68HPXCBw/view?usp=drive_link',
   },
   {
     title: 'Cybersecurity Awareness Month Seminar',
