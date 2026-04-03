@@ -117,9 +117,9 @@ export default function Hero() {
             <span style={{ fontFamily:'var(--font-display)', fontSize:'0.6rem', letterSpacing:'0.2em', color:'var(--white-dim)' }}>FOLLOW</span>
             <div style={{ width:30, height:1, background:'var(--blue-border)' }} />
             {[
-              { icon:<FaGithub size={18}/>, href:'https://github.com/YourUsername', label:'GitHub' },
-              { icon:<FaLinkedin size={18}/>, href:'https://linkedin.com/in/YourUsername', label:'LinkedIn' },
-              { icon:<FaFacebook size={18}/>, href:'https://facebook.com/YourUsername', label:'Facebook' },
+              { icon:<FaGithub size={18}/>, href:'https://github.com/seanio777', label:'GitHub' },
+              { icon:<FaLinkedin size={18}/>, href:'https://www.linkedin.com/in/ja-verano/', label:'LinkedIn' },
+              { icon:<FaFacebook size={18}/>, href:'https://web.facebook.com/j.v.970', label:'Facebook' },
             ].map(s => (
               <a key={s.label} href={s.href} target="_blank" rel="noreferrer" style={{
                 color:'var(--white-dim)', transition:'color 0.3s ease', cursor:'none',
