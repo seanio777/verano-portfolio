@@ -1,7 +1,6 @@
 import { FiAward, FiExternalLink } from 'react-icons/fi'
 import { FaTrophy, FaMedal, FaStar, FaNewspaper } from 'react-icons/fa'
 
-// certificateLink: paste the URL of proof/certificate if available, or leave '' to hide button
 const achievements = [
   {
     title: "Dean's Lister",
@@ -9,7 +8,7 @@ const achievements = [
     description: 'Recognized for outstanding academic performance with a GWA of 1.55, qualifying for the Dean\'s List.',
     icon: <FaTrophy size={20} />,
     color: '#fbbf24',
-    certificateLink: 'https://drive.google.com/file/d/1vTqX1dIC-hnsagbXYykng9oqth7B_8Gk/view?usp=sharing', // ← paste proof URL here if available
+    certificateLink: 'https://drive.google.com/file/d/1vTqX1dIC-hnsagbXYykng9oqth7B_8Gk/view?usp=sharing',
   },
   {
     title: '2nd Runner Up – Inhinyera\'s Shirt Design Competition',
@@ -69,84 +68,80 @@ export default function Achievements() {
           gap: 28,
         }}>
           {achievements.map((a, i) => (
-            <div key={i} className="card" style={{ position: 'relative', overflow: 'hidden' }}>
-              {/* Watermark number */}
+            // ── FIX: card uses flex column so button always pins to bottom ──
+            <div key={i} className="card" style={{
+              position: 'relative', overflow: 'hidden',
+              display: 'flex', flexDirection: 'column',
+            }}>
+              {/* Watermark */}
               <div style={{
                 position: 'absolute', top: -10, right: 16,
-                fontFamily: 'var(--font-display)',
-                fontSize: '5rem', fontWeight: 900,
-                color: 'rgba(30,91,255,0.06)',
-                lineHeight: 1, userSelect: 'none',
+                fontFamily: 'var(--font-display)', fontSize: '5rem', fontWeight: 900,
+                color: 'rgba(30,91,255,0.06)', lineHeight: 1, userSelect: 'none',
               }}>0{i + 1}</div>
 
-              <div style={{ display: 'flex', gap: 18, alignItems: 'flex-start' }}>
+              <div style={{ display: 'flex', gap: 18, alignItems: 'flex-start', flex: 1 }}>
                 {/* Icon */}
                 <div style={{
                   width: 52, height: 52, borderRadius: 12,
-                  background: `${a.color}18`,
-                  border: `1px solid ${a.color}30`,
+                  background: `${a.color}18`, border: `1px solid ${a.color}30`,
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
                   color: a.color, flexShrink: 0,
                 }}>
                   {a.icon}
                 </div>
 
-                <div style={{ flex: 1, minWidth: 0 }}>
+                {/* Text block — flex column so description grows and button stays at bottom */}
+                <div style={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column' }}>
                   <h3 style={{
-                    fontFamily: 'var(--font-heading)',
-                    fontSize: '1.05rem', fontWeight: 700,
+                    fontFamily: 'var(--font-heading)', fontSize: '1.05rem', fontWeight: 700,
                     color: 'var(--white)', marginBottom: 4,
                   }}>{a.title}</h3>
 
                   <p style={{
-                    fontFamily: 'var(--font-display)',
-                    fontSize: '0.62rem', letterSpacing: '0.1em',
-                    color: a.color, marginBottom: 10,
-                    textTransform: 'uppercase',
+                    fontFamily: 'var(--font-display)', fontSize: '0.62rem', letterSpacing: '0.1em',
+                    color: a.color, marginBottom: 10, textTransform: 'uppercase',
                   }}>{a.subtitle}</p>
 
+                  {/* Description grows to fill space */}
                   <p style={{
-                    fontFamily: 'var(--font-body)',
-                    fontSize: '0.85rem', color: 'var(--white-muted)',
-                    lineHeight: 1.7, marginBottom: a.certificateLink ? 14 : 0,
+                    fontFamily: 'var(--font-body)', fontSize: '0.85rem', color: 'var(--white-muted)',
+                    lineHeight: 1.7, flex: 1,
+                    marginBottom: 16,   /* always 16px below description */
                   }}>{a.description}</p>
 
-                  {/* ── Certificate / Proof button — only shows if link provided ── */}
-                  {a.certificateLink && (
-                    <a
-                      href={a.certificateLink}
-                      target="_blank"
-                      rel="noreferrer"
-                      style={{
-                        display: 'inline-flex',
-                        alignItems: 'center',
-                        gap: 5,
-                        fontFamily: 'var(--font-display)',
-                        fontSize: '0.55rem',
-                        letterSpacing: '0.1em',
-                        color: a.color,
-                        background: `${a.color}12`,
-                        border: `1px solid ${a.color}30`,
-                        padding: '5px 12px',
-                        borderRadius: 4,
-                        textDecoration: 'none',
-                        textTransform: 'uppercase',
-                        cursor: 'none',
-                        transition: 'all 0.3s ease',
-                        marginTop: 4,
-                      }}
-                      onMouseEnter={e => {
-                        e.currentTarget.style.background = `${a.color}22`
-                        e.currentTarget.style.borderColor = a.color
-                      }}
-                      onMouseLeave={e => {
-                        e.currentTarget.style.background = `${a.color}12`
-                        e.currentTarget.style.borderColor = `${a.color}30`
-                      }}
-                    >
-                      <FiExternalLink size={10} /> View Proof
-                    </a>
-                  )}
+                  {/* ── Button row — always at the same vertical position ── */}
+                  <div style={{ minHeight: 32 }}>
+                    {a.certificateLink ? (
+                      <a
+                        href={a.certificateLink}
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{
+                          display: 'inline-flex', alignItems: 'center', gap: 5,
+                          fontFamily: 'var(--font-display)', fontSize: '0.55rem',
+                          letterSpacing: '0.1em', color: a.color,
+                          background: `${a.color}12`, border: `1px solid ${a.color}30`,
+                          padding: '5px 12px', borderRadius: 4,
+                          textDecoration: 'none', textTransform: 'uppercase',
+                          cursor: 'none', transition: 'all 0.3s ease',
+                        }}
+                        onMouseEnter={e => {
+                          e.currentTarget.style.background = `${a.color}22`
+                          e.currentTarget.style.borderColor = a.color
+                        }}
+                        onMouseLeave={e => {
+                          e.currentTarget.style.background = `${a.color}12`
+                          e.currentTarget.style.borderColor = `${a.color}30`
+                        }}
+                      >
+                        <FiExternalLink size={10} /> View Proof
+                      </a>
+                    ) : (
+                      /* Empty placeholder keeps height consistent for cards without a link */
+                      <span style={{ display: 'block', height: 28 }} />
+                    )}
+                  </div>
                 </div>
               </div>
             </div>

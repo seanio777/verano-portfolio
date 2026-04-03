@@ -36,7 +36,6 @@ export default function Hero() {
         {/* Left: Text */}
         <div style={{ flex: 1, minWidth: 280, animation: 'fadeInLeft 1s ease forwards' }}>
 
-          {/* Status badge */}
           <div style={{
             display: 'inline-flex', alignItems: 'center', gap: 8,
             background: 'rgba(0,212,255,0.08)',
@@ -64,7 +63,6 @@ export default function Hero() {
             BS Computer Engineering Student
           </div>
 
-          {/* ── BIOGRAPHY ── */}
           <div style={{
             fontFamily: 'var(--font-body)',
             fontSize: '0.9rem',
@@ -75,17 +73,15 @@ export default function Hero() {
           }}>
             <p style={{ marginBottom: 12 }}>
               His name is <strong style={{ color:'var(--white)' }}>Jose Antonio C. Verano</strong>, born on{' '}
-              <strong style={{ color:'var(--white)' }}>November 5, 2006</strong>{/* ← REPLACE */}, and currently
-              residing in <strong style={{ color:'var(--white)' }}>Paranaque City, Metro Manila</strong>.{/* ← REPLACE */}
+              <strong style={{ color:'var(--white)' }}>November 5, 2006</strong>, and currently
+              residing in <strong style={{ color:'var(--white)' }}>Paranaque City, Metro Manila</strong>.
             </p>
-
             <p style={{ marginBottom: 12 }}>
               He began his elementary education at <strong style={{ color:'var(--white)' }}>Masville Elementary School</strong>,
               completing Grades 1 to 4 before transferring to{' '}
               <strong style={{ color:'var(--white)' }}>San Isidro Elementary School</strong>, where he finished
               his elementary journey (Grades 5 to 6).
             </p>
-
             <p style={{ marginBottom: 12 }}>
               He then passed the entrance examination for the{' '}
               <strong style={{ color:'var(--white)' }}>STE Program at Parañaque National High School</strong>,
@@ -96,19 +92,17 @@ export default function Hero() {
               graduating likewise{' '}
               <strong style={{ color:'var(--cyan-accent)' }}>with High Honors</strong>.
             </p>
-
             <p>
               He is currently enrolled in{' '}
               <strong style={{ color:'var(--white)' }}>BS Computer Engineering</strong> at the{' '}
               <strong style={{ color:'var(--white)' }}>Technological Institute of the Philippines – Manila</strong>,
               with an expected graduation of{' '}
-              <strong style={{ color:'var(--white)' }}>2028</strong>.{/* ← REPLACE */}{' '}
+              <strong style={{ color:'var(--white)' }}>2028</strong>.{' '}
               After graduation, he aspires to{' '}
-              <strong style={{ color:'var(--white)' }}>be a Cybersecurity Analyst</strong>.{/* ← REPLACE */}
+              <strong style={{ color:'var(--white)' }}>be a Cybersecurity Analyst</strong>.
             </p>
           </div>
 
-          {/* CTA Buttons */}
           <div style={{ display:'flex', gap:16, flexWrap:'wrap', marginBottom:48 }}>
             <a href="#contact" className="btn-primary">
               Get In Touch <FiArrowDown size={16} />
@@ -118,8 +112,8 @@ export default function Hero() {
             </a>
           </div>
 
-          {/* Socials */}
-          <div style={{ display:'flex', gap:16, alignItems:'center', flexWrap:'wrap' }}>
+          {/* Socials — hidden on mobile to prevent overlap with SCROLL indicator */}
+          <div className="hero-socials" style={{ display:'flex', gap:16, alignItems:'center', flexWrap:'wrap' }}>
             <span style={{ fontFamily:'var(--font-display)', fontSize:'0.6rem', letterSpacing:'0.2em', color:'var(--white-dim)' }}>FOLLOW</span>
             <div style={{ width:30, height:1, background:'var(--blue-border)' }} />
             {[
@@ -168,8 +162,8 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div style={{
+      {/* SCROLL indicator — hidden on mobile via CSS class */}
+      <div className="scroll-indicator" style={{
         position:'absolute', bottom:40, left:'50%', transform:'translateX(-50%)',
         display:'flex', flexDirection:'column', alignItems:'center', gap:8,
         animation:'fadeInUp 1.5s ease forwards', zIndex:2,

@@ -897,3 +897,54 @@ nav + div[style*="position: fixed"] {
   background: linear-gradient(135deg, #dceeff, #e8f2ff);
   border-color: #a8c8f8;
 }
+
+/* ============================================================
+   PORTFOLIO MOBILE FIXES — paste at the very bottom of App.css
+   ============================================================ */
+
+/* ── Fix 1: Hide custom cursor on touch/mobile devices ── */
+@media (hover: none) and (pointer: coarse) {
+  /* Hide the custom cursor elements completely */
+  .cursor,
+  .cursor-follower {
+    display: none !important;
+  }
+
+  /* Restore normal pointer cursor for all interactive elements */
+  body {
+    cursor: auto !important;
+  }
+
+  a, button, [role="button"] {
+    cursor: pointer !important;
+  }
+}
+
+/* ── Fix 2: Hide SCROLL indicator on mobile (prevents overlap with social icons) ── */
+@media (max-width: 768px) {
+  .scroll-indicator {
+    display: none !important;
+  }
+
+  /* Also push the socials slightly lower so they don't crowd the buttons */
+  .hero-socials {
+    margin-top: 8px !important;
+  }
+}
+
+/* ── Fix 3: References section — fix spacing between title and paragraph ── */
+/* The section-title has margin-bottom: 60px by default which is fine,
+   but the paragraph used marginTop: -40 causing it to overlap. 
+   That's fixed in References.jsx directly (marginTop: 0).
+   This CSS rule is a safety net. */
+#references .section-title {
+  margin-bottom: 24px !important;
+}
+
+/* ── Fix 4: Achievements — View Proof button alignment ──
+   Already handled in Achievements.jsx via flex layout.
+   This ensures all achievement cards have equal height in the grid. */
+#achievements .card {
+  display: flex !important;
+  flex-direction: column !important;
+}

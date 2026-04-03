@@ -21,7 +21,18 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  const handleLinkClick = () => setMenuOpen(false)
+  // ── FIX: close menu AND scroll to correct section ──────────
+  const handleLinkClick = (e, href) => {
+    e.preventDefault()
+    setMenuOpen(false)
+    // Small delay so the drawer slides away before scrolling
+    setTimeout(() => {
+      const target = document.querySelector(href)
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
+    }, 320)
+  }
 
   return (
     <>
@@ -40,7 +51,7 @@ export default function Navbar() {
         borderBottom:  scrolled || menuOpen ? '1px solid rgba(26, 58, 107, 0.5)' : 'none',
         transition:    'all 0.4s ease',
       }}>
-        <a href="#hero" onClick={handleLinkClick} style={{
+        <a href="#hero" onClick={e => handleLinkClick(e, '#hero')} style={{
           fontFamily:     'var(--font-display)',
           fontSize:       '1rem',
           fontWeight:     700,
@@ -95,31 +106,40 @@ export default function Navbar() {
         </button>
       </nav>
 
-      {/* Mobile full-screen drawer */}
+      {/* Mobile drawer */}
       <div style={{
         position:'fixed', top:0, left:0, right:0, bottom:0, zIndex:999,
         background:'rgba(2, 11, 24, 0.97)', backdropFilter:'blur(20px)',
         display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center',
         gap:'8px', padding:'80px 40px 40px',
+        overflowY: 'auto',
         transform: menuOpen ? 'translateX(0)' : 'translateX(100%)',
         transition:'transform 0.35s cubic-bezier(0.4, 0, 0.2, 1)',
       }}>
         <div className="grid-bg" style={{ opacity:0.4 }} />
         {navLinks.map((link, i) => (
-          <a key={link.label} href={link.href} onClick={handleLinkClick} style={{
-            fontFamily:'var(--font-heading)', fontSize:'1.8rem', fontWeight:700,
-            color:'var(--white-muted)', textDecoration:'none', letterSpacing:'0.08em',
-            textTransform:'uppercase', padding:'12px 0',
-            borderBottom:'1px solid rgba(26, 58, 107, 0.3)',
-            width:'100%', textAlign:'center', transition:'color 0.3s ease', cursor:'none',
-            animation: menuOpen ? `fadeInUp 0.4s ease ${i * 0.06}s both` : 'none',
-          }}
+          <a
+            key={link.label}
+            href={link.href}
+            onClick={e => handleLinkClick(e, link.href)}
+            style={{
+              fontFamily:'var(--font-heading)', fontSize:'1.8rem', fontWeight:700,
+              color:'var(--white-muted)', textDecoration:'none', letterSpacing:'0.08em',
+              textTransform:'uppercase', padding:'12px 0',
+              borderBottom:'1px solid rgba(26, 58, 107, 0.3)',
+              width:'100%', textAlign:'center', transition:'color 0.3s ease', cursor:'none',
+              animation: menuOpen ? `fadeInUp 0.4s ease ${i * 0.06}s both` : 'none',
+            }}
             onMouseEnter={e => e.currentTarget.style.color = 'var(--cyan-accent)'}
             onMouseLeave={e => e.currentTarget.style.color = 'var(--white-muted)'}
           >{link.label}</a>
         ))}
-        <a href="#contact" onClick={handleLinkClick} className="btn-primary"
-          style={{ marginTop:24, fontSize:'1rem', padding:'14px 40px' }}>
+        <a
+          href="#contact"
+          onClick={e => handleLinkClick(e, '#contact')}
+          className="btn-primary"
+          style={{ marginTop:24, fontSize:'1rem', padding:'14px 40px' }}
+        >
           Hire Me
         </a>
       </div>
